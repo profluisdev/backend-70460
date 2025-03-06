@@ -1,0 +1,22 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file=.env.development ./src/app",
+    "test": "node --watch --env-file=.env.test ./src/app",
+    "prod": "node --watch --env-file=.env.production ./src/app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.4.1",
+    "mongoose-paginate-v2": "^1.8.2"
+  }
+}
