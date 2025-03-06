@@ -17,7 +17,7 @@ app.use(
     secret: envsConfig.SESSION_SECRET,
     resave: true, // Evita guardar la sesión si no hay cambios
     saveUninitialized: true, // Guarda sesiones vacías
-    cookie: { secure: false, maxAge: 5000 }, // Debe estar en true si usas HTTPS
+    cookie: { secure: false, maxAge: 500000 }, // Debe estar en true si usas HTTPS
   })
 );
 
