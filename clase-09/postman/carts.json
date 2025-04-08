@@ -1,0 +1,115 @@
+{
+  "info": {
+    "_postman_id": "unique-id",
+    "name": "Carts",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Cart",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/carts",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "carts"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Cart by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/carts/{{cartId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "carts", "{{cartId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Product to Cart",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/carts/{{cartId}}/product/{{productId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "carts", "{{cartId}}", "product", "{{productId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Product from Cart",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8080/api/carts/{{cartId}}/product/{{productId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "carts", "{{cartId}}", "product", "{{productId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Product Quantity in Cart",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"quantity\": 2\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/carts/{{cartId}}/product/{{productId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "carts", "{{cartId}}", "product", "{{productId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Clear Cart",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8080/api/carts/{{cartId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "carts", "{{cartId}}"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
