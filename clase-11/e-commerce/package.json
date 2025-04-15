@@ -1,0 +1,32 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file=.env.development ./src/app",
+    "debug9": "node --watch --env-file=.env.development ./src/app",
+    "test": "node --watch --env-file=.env.test ./src/app",
+    "prod": "node --watch --env-file=.env.production ./src/app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "mongoose-paginate-v2": "^1.8.2",
+    "nodemailer": "^6.10.1",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "uuid": "^11.1.0",
+    "zod": "^3.24.2"
+  }
+}
