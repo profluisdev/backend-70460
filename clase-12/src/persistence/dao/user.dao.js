@@ -7,7 +7,7 @@ class UserDao {
   async getAll() {
     return await userModel.find();
   }
-  async getOne(query) {
+  async findOne(query) {
     return await userModel.findOne(query);
   }
   async update(id, data) {
